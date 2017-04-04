@@ -23,7 +23,7 @@ WHERE release_date BETWEEN 1990 AND 1999;
 SELECT name
 AS 'Albums with Less Than 20 Million Sales'
 FROM albums
-WHERE sales < 2000;
+WHERE sales < 20;
 
 SELECT name
 AS 'Albums in the Rock Genre'
