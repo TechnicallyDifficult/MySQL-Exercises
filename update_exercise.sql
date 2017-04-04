@@ -13,15 +13,15 @@ FROM albums;
 
 SELECT name, release_date
 FROM albums
-WHERE release_date < 1980;
+WHERE release_date < '1980-01-01';
 
 UPDATE albums
-SET release_date = release_date - 100
-WHERE release_date BETWEEN 1800 AND 1979;
+SET release_date = DATE_SUB(release_date,INTERVAL 100 YEAR)
+WHERE release_date < '1980-01-01';
 
 SELECT name, release_date
 FROM albums
-WHERE release_date < 1980;
+WHERE release_date < '1980-01-01';
 
 --
 
