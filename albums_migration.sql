@@ -6,8 +6,8 @@ CREATE TABLE albums (
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	artist VARCHAR(255),
 	name VARCHAR(255),
-	release_date YEAR(4),
-	sales DECIMAL(12, 2),
+	release_date SMALLINT UNSIGNED,
+	sales DECIMAL(6, 2),
 	genre VARCHAR(255),
 	PRIMARY KEY (id)
 );

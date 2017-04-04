@@ -16,7 +16,7 @@ FROM albums
 WHERE release_date < 1980;
 
 UPDATE albums
-SET release_date = release_date - 10
+SET release_date = release_date - 100
 WHERE release_date BETWEEN 1800 AND 1979;
 
 SELECT name, release_date
