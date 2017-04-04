@@ -7,7 +7,7 @@ CREATE TABLE albums (
 	artist VARCHAR(255),
 	name VARCHAR(255),
 	release_date YEAR,
-	sales FLOAT UNSIGNED,
+	sales DECIMAL(12, 2),
 	genre VARCHAR(255),
 	PRIMARY KEY (id)
 );
