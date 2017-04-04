@@ -1,13 +1,13 @@
 USE codeup_test_db;
 
-SELECT name, release_date
+DELETE
 FROM albums
-WHERE release_date < '1991-01-01';
+WHERE release_date > '1991-01-01';
 
-SELECT name, genre
+DELETE
 FROM albums
 WHERE genre REGEXP '[Dd]isco';
 
-SELECT name, artist
+DELETE
 FROM albums
 WHERE artist LIKE '%Whitney Houston%';
