@@ -28,4 +28,5 @@ WHERE sales < 2000;
 SELECT name
 AS 'Albums in the Rock Genre'
 FROM albums
-WHERE genre = 'Rock';
+WHERE genre LIKE '%Rock%'
+OR genre LIKE '%rock%';
