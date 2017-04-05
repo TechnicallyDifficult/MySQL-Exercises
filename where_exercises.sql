@@ -23,4 +23,5 @@ WHERE (hire_date BETWEEN '1990-01-01' AND '1999-12-31')
 
 SELECT *
 FROM employees
-WHERE last_name LIKE '%q';
+WHERE last_name LIKE '%q%'
+  AND last_name NOT LIKE '%qu%';
