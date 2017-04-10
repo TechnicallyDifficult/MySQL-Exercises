@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXISTS join_test_db;
